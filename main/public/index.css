@@ -121,9 +121,9 @@ nav .menu li  a:hover{
 .banner-card .card-content{
     position: absolute;
     color: aliceblue;
-    right: 80px;
-    bottom: 160px;
-    left: 80px;
+    right: 1vw;
+    bottom: 10vmin;
+    left: 2vmin;
 }
 
 .banner-card .card-info{
@@ -131,24 +131,24 @@ nav .menu li  a:hover{
     display: flex;
     align-items: center;
     margin-right: 20px;
+    font-size: 2vmin;
 }
 
 .banner-card .card-info div{
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 2vmin;
 
 }
 
 .banner-card .card-info i{
-    margin-right: 5px;
+    margin-right: 1vmin;
 }
 
 .banner-card .card-title h2{
     line-height: 0.7;
     position: absolute;
     display: inline;
-    top: 1%;
-    right: 42%;
+    top: 1vh;
     font-size: 5vmin;
 }

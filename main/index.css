@@ -90,7 +90,7 @@ nav .menu li  a:hover{
 
 .banner{
     position: relative;
-    top: 80px;
+    top: 100px;
     border: 23px solid(rgb(36, 38, 42));
     justify-content: space-around;
     display: flex;
@@ -110,7 +110,12 @@ nav .menu li  a:hover{
     border-radius: 20px;
     object-fit: fill;
     width: 100%;
-    height: auto;
+    height: 100%;
+    transition: all 5s ease-in-out;
+}
+
+.banner-img:hover{
+    transform: scale(1.1)
 }
 
 .banner-card .card-content{

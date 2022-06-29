@@ -5,8 +5,10 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: poppins;
-    background-color: rgb(59, 69, 73);
+    background-color: rgb(36, 38, 42);
 }
+
+
 
 *{
     box-sizing: border-box;
@@ -25,8 +27,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    border: 1px solid rgba(0,0,0,0.04);
-    background-color:   rgb(48, 57, 61);
+    border: 2px solid rgba(0,0,0,0.04);
+    background-color:rgb(36, 38, 42);
     position: fixed;
     left: 0;
     top: 0;
@@ -79,11 +81,69 @@ nav .menu li a{
 
 .search i{
     color: #3a3a3a;
+    cursor: pointer;
 }
 
 nav .menu li  a:hover{
     color: rgb(255, 255, 255);
 }
 
+.banner{
+    position: relative;
+    top: 80px;
+    border: 23px solid(rgb(36, 38, 42));
+    justify-content: space-around;
+    display: flex;
+    margin-bottom: 60px;
+}
 
+.banner-card{
+    position: relative;
+    width: 133vmin;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
+.banner-img{
+    position: relative;
+    border-radius: 20px;
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+}
+
+.banner-card .card-content{
+    position: absolute;
+    color: aliceblue;
+    right: 80px;
+    bottom: 160px;
+    left: 80px;
+}
+
+.banner-card .card-info{
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.banner-card .card-info div{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+.banner-card .card-info i{
+    margin-right: 5px;
+}
+
+.banner-card .card-title h2{
+    line-height: 0.7;
+    position: absolute;
+    display: inline;
+    top: 1%;
+    right: 42%;
+    font-size: 5vmin;
+}

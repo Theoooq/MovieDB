@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: rgb(37, 39, 42);
+}
+
+::-webkit-scrollbar{
+    height: .5vmax; 
+    width: .5vmax;
+}
+
+
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(70, 74, 79);
+    border-radius: 20px;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    height: 8vmin;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: .3vmin solid rgba(0,0,0,0.04);
+    background-color:rgb(37, 39, 42);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.title h1{
+    margin: 0px;
+    font-weight: 900;
+    font-size: 2vmax;
+    background: linear-gradient(141deg, rgba(92,125,255,1) 26%, rgba(96,196,240,1) 72%, rgba(182,231,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav .menu{
+    display: flex;
+}
+
+nav .menu li a{
+    margin-top: 2vmin;
+    height: 4vmin;
+    line-height: 5vmin;
+    margin: 0vmin;
+    padding: 0vmin 2vmin;
+    display: flex;
+    font-size: 1.5vmin;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #b1b1b1;
+}
+
+.search{
+    font-size: 1.5vmin;
+    width: 25vmin;
+    height: 5vmin;
+    background-color: rgba(245,245,245,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vmin;
+    padding: 0px 20px;
+}
+
+.search input{
+    font-size: 1.5vmin;
+    width: 100%;
+    height: 3vmin;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.search i{
+    color: #3a3a3a;
+    cursor: pointer;
+}
+
+nav .menu li  a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+
+.movie-info{
+    height: 20vmax;
+    width: 100%;
+    height: calc(100vh - 60px);
+    margin-top: 6vmin;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie-detail{
+    padding: 8vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+
+.movie-name{
+    margin-top: 20vmin;
+    font-size: 3vmin;
+    font-weight: 500;
+    text-shadow: .2vmin .2vmin 1vmin rgb(0, 0, 0);
+    margin-right: -40vmin;
+    margin-left: 65vmin;
+    position: relative;
+    bottom: 9vmin;
+}
+
+.genres{
+    margin-top: 10vmin;
+    text-shadow: .2vmin .2vmin .6vmin rgb(0, 0, 0);
+    font-size: 2vmin;
+    margin-right: -40vmin;
+    margin-left: 65vmin;
+    position: relative;
+    bottom: 20vmin;
+}
+
+.des{
+    margin-top: 10vmin;
+    font-weight: 400;
+    text-shadow: .2vmin .2vmin 1vmin rgb(0, 0, 0);
+    width: 60vmin;
+    line-height: 2vmin;
+    font-size: 1.8vmin;
+    margin-right: 100vmin;
+    margin-left: 65vmin;
+    position: relative;
+    bottom: 30vmin;
+    display: flex;
+}
+
+
+.trailer-container,
+.recommendations{
+    color: #fff;
+    padding: 5vw 5vw 0;
+}
+
+.heading{
+    font-size: 3vmin;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+iframe{
+    margin-right: 2vmin;
+    width: 40vmin;
+    height: 25vmin;
+    border-radius: 1vmin;
+}
+
+.recommendations-container{
+    width: 100%;
+    height: 60vmin;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    flex-direction: row;
+}
+
+.movie{
+    margin-right: 5vmin;
+    margin-bottom: 10vmin;
+    transition: all 2s ease-in-out;
+}
+
+.movie:hover{
+    transform: scale(1.1);
+}
+
+.movie img{
+    border-radius: 2vmin;
+    height: 30vmin;
+    width: 20vmin;
+}
+
+.movie p{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    opacity: 0;
+}
+
+
+.movie-card{
+    top: 23vmin;
+    margin-top: -35vmin;
+    position: relative;
+    text-align: center;
+    margin-right: 3vmin;
+    margin-left: 10vmin;
+    height: 35vmin;
+}
+
+
+.movie-card .card-up{
+    position: relative;
+    width: 45vmin;
+    height: 70vmin;
+    box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.7);
+    overflow: hidden;
+    border-radius: 2vmin;
+    transition: all .2s ease-in-out;  
+}
+
+.movie-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 2vmin;
+}
+

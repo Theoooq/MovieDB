@@ -1,0 +1,259 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: rgb(37, 39, 42);
+}
+
+::-webkit-scrollbar{
+    height: .5vmax; 
+    width: .5vmax;
+}
+
+::-webkit-scrollbar-track{
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(70, 74, 79);
+    border-radius: 20px;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    height: 8vmin;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: .3vmin solid rgba(0,0,0,0.04);
+    background-color:rgb(37, 39, 42);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.title h1{
+    margin: 0px;
+    font-weight: 900;
+    font-size: 2vmax;
+    background: linear-gradient(141deg, rgba(92,125,255,1) 26%, rgba(96,196,240,1) 72%, rgba(182,231,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav .menu{
+    display: flex;
+}
+
+nav .menu li a{
+    margin-top: 2vmin;
+    height: 4vmin;
+    line-height: 5vmin;
+    margin: 0vmin;
+    padding: 0vmin 2vmin;
+    display: flex;
+    font-size: 1.5vmin;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #b1b1b1;
+}
+
+.search{
+    font-size: 1.5vmin;
+    width: 25vmin;
+    height: 5vmin;
+    background-color: rgba(245,245,245,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vmin;
+    padding: 0px 20px;
+}
+
+.search input{
+    font-size: 1.5vmin;
+    width: 100%;
+    height: 3vmin;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.search i{
+    color: #3a3a3a;
+    cursor: pointer;
+}
+
+nav .menu li  a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*Filme recomendado*/
+
+
+/*Banner*/
+
+.bann{
+    color: aliceblue;
+    margin-left: 20vmin;
+    position: relative;
+    background-size: cover;
+    border-radius: 2vmin;
+    width: 133vmin;
+    height: 70vmin;
+    object-fit: contain;
+    justify-items: center;
+    margin-left: 33vmin;
+    bottom: 40vmin;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.banner-content{
+    position: relative;
+    top: 50vmin;
+    margin-top: 50vmin;
+    margin-left: 5vmin;
+    text-shadow: .5vmin .2vmin .5vmin rgb(0, 0, 0);
+}
+
+.banner-title{
+    margin-top: 0vmin;
+    line-height: 5vmin;
+    font-size: 5vmin;
+    text-shadow: .2vmin .2vmin 2.3vmin rgb(0, 0, 0);
+    position: relative;
+    top: 50vmin;
+    left: 4vmin;
+}
+
+
+
+
+/*Lista de filmes*/
+
+.main{
+    position: relative;
+    top: 5vmin;
+    margin-left: 1vmin;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140vmin,1fr));
+    gap: 3vmin;
+    margin-bottom: 6vmin;
+    color: aliceblue;
+    justify-items: center;
+}
+
+.movie-category > :last-child{
+    margin-right: auto;
+    transition : opacity 2s;
+    margin-left: 20vmin;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.category::-webkit-scrollbar{
+    display: none;
+    transition : opacity 2s;
+    
+}
+
+.movies{
+    width: 150vmin;
+    height: 50vmin;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+.movie-card{
+    position: relative;
+    bottom: 6vmin;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 3vmin;
+    margin-left: 1vmin;
+    height: 35vmin;
+}
+
+
+
+.movie-card .card-up{
+    position: relative;
+    margin-bottom: 0vmax;
+    margin-top: 0vmin;
+    width: 20vmin;
+    height: 30vmin;
+    overflow: hidden;
+    transition: all .2s ease-in-out;    
+}
+
+.movie-img{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0vmax;
+    border-radius: 2vmin;
+}
+
+.card-up:hover{
+    transform: scale(1.02);
+}
+
+.category{
+    font-size: 5vmin;
+    margin-right: 130vmin;
+    justify-items: center;
+}
+
+.movie-info{
+    margin-top: 0vmin;
+    font-size: 1.7vmin;
+    line-height: 0;
+    cursor: text;
+    position: relative;
+    bottom: 1vmin;
+}
+
+.movie-body{
+    font-size: 1vmax;
+    position: relative;
+    bottom: 2vmin;
+    cursor: text;
+}
+
+
+

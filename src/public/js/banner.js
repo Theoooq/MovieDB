@@ -36,7 +36,7 @@ fetch(requests.fetchPopular)
   let bann = document.querySelector('.bann')
   bann.style.backgroundImage = "url(" + img_url + setMovie.backdrop_path + ")";
   bann.innerHTML+=`
-  <header class="banner" onclick="location.href='/${setMovie.id}'">
+  <header class="banner">
   <div class="banner-content">
       <div class="banner-year">
           <i class="fa-solid fa-calendar-days"></i>

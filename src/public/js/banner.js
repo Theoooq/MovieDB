@@ -40,7 +40,7 @@ fetch(requests.fetchPopular)
   <div class="banner-content">
       <div class="banner-year">
           <i class="fa-solid fa-calendar-days"></i>
-          <span class="year">${setMovie.release_date}</span>
+          <span class="year">${setMovie.release_date.split('-').join('/')}</span>
       </div>
 
       </div>

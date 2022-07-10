@@ -48,21 +48,7 @@ const formatString = (currentIndex, maxIndex) => {
 
 // fetching video clips
 
-fetch(`${movie_detail_http}${movie_id}/videos?` + new URLSearchParams({
-    api_key: api_key
-}))
-.then(res => res.json())
-.then(data => {
-    let trailerContainer = document.querySelector('.trailer-container');
 
-    let maxClips = (data.results.length > 4) ? 4 : data.results.length;
-
-    for(let i = 0; i < maxClips; i++){
-        trailerContainer.innerHTML += `
-        <iframe src="https://youtube.com/embed/${data.results[i].key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        `;
-    }
-})
 
 // fetch recommendations
 
@@ -71,7 +57,7 @@ fetch(`${movie_detail_http}${movie_id}/recommendations?` + new URLSearchParams({
 }))
 .then(res => res.json())
 .then(data => {
-    let container = document.querySelector('.recommendations-container');
+    let container = document.querySelector('.recommendations-list');
     for(let i = 0; i < 16; i++){
         if(data.results[i].backdrop_path == null){
             i++;
@@ -81,7 +67,6 @@ fetch(`${movie_detail_http}${movie_id}/recommendations?` + new URLSearchParams({
         <div class="movie" onclick="location.href = '/${data.results[i].id}'">
             <div class="gradient"></div>
             <img src="${img_url}${data.results[i].poster_path}" alt="">
-            <p class="movie-title">${data.results[i].name}</p>
         </div>
         `;
 

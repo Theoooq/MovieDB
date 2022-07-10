@@ -125,6 +125,7 @@ nav .menu li  a:hover{
     justify-items: center;
     margin-left: 33vmin;
     bottom: 40vmin;
+    margin-bottom: 0vmin;
 }
 
 .banner{
@@ -159,24 +160,18 @@ nav .menu li  a:hover{
 
 .main{
     position: relative;
-    top: 5vmin;
     margin-left: 1vmin;
     display: grid;
+    bottom: 50vmin;
     grid-template-columns: repeat(auto-fill, minmax(140vmin,1fr));
     gap: 3vmin;
+    margin-top: 30vmin; 
     margin-bottom: 6vmin;
     color: aliceblue;
     justify-items: center;
 }
 
-.movie-category > :last-child{
-    margin-right: auto;
-    transition : opacity 2s;
-    margin-left: 20vmin;
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
-}
+
 
 .category::-webkit-scrollbar{
     display: none;
@@ -193,8 +188,6 @@ nav .menu li  a:hover{
     overflow-y: hidden;
     scroll-behavior: smooth;
 }
-
-
 
 
 

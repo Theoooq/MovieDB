@@ -64,7 +64,7 @@ fetch(`${movie_detail_http}${movie_id}/recommendations?` + new URLSearchParams({
         }
         container.innerHTML += `
 
-        <div class="movie" onclick="location.href = '/${data.results[i].id}'">
+        <div class="movie">
             <div class="gradient"></div>
             <img src="${img_url}${data.results[i].poster_path}" alt="">
         </div>

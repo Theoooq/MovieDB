@@ -66,7 +66,7 @@ const movies = (id, data) => {
 
         
         moviesCards.innerHTML+= `
-        <header class="movie-card" onclick="location.href='/${item.id}'">
+        <header class="movie-card">
                 <div class="card-up">
                     <img src="${img_url}${item.poster_path}" alt="${item.title}" class="movie-img">
                 </div>
